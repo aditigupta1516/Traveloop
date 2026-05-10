@@ -10,12 +10,12 @@ import { Button } from "@/components/ui/Button";
 const CATEGORIES = ["All", "Beaches", "Mountains", "Cities", "Historical", "Adventure"];
 
 const DESTINATIONS = [
-  { id: "1", name: "Amalfi Coast", country: "Italy", img: "https://images.unsplash.com/photo-1533682805518-48d1f5b8cb3a?w=600&q=80", rating: 4.9, tags: ["Beaches", "Historical"], popular: true },
-  { id: "2", name: "Swiss Alps", country: "Switzerland", img: "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=600&q=80", rating: 4.8, tags: ["Mountains", "Adventure"], popular: true },
-  { id: "3", name: "Kyoto", country: "Japan", img: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&q=80", rating: 4.9, tags: ["Cities", "Historical"], popular: true },
-  { id: "4", name: "Machu Picchu", country: "Peru", img: "https://images.unsplash.com/photo-1526392060635-9d6019884377?w=600&q=80", rating: 4.9, tags: ["Historical", "Mountains"], popular: false },
-  { id: "5", name: "Maui", country: "Hawaii", img: "https://images.unsplash.com/photo-1542259009477-d625272157b7?w=600&q=80", rating: 4.7, tags: ["Beaches", "Adventure"], popular: false },
-  { id: "6", name: "Petra", country: "Jordan", img: "https://images.unsplash.com/photo-1579606032822-7f72ebbaee4e?w=600&q=80", rating: 4.8, tags: ["Historical"], popular: false },
+  { id: "1", name: "Amalfi Coast", country: "Italy", img: "https://images.unsplash.com/photo-1633321088392-892f3883b161?w=800&q=80", rating: 4.9, tags: ["Beaches", "Historical"], popular: true },
+  { id: "2", name: "Swiss Alps", country: "Switzerland", img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80", rating: 4.8, tags: ["Mountains", "Adventure"], popular: true },
+  { id: "3", name: "Kyoto", country: "Japan", img: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80", rating: 4.9, tags: ["Cities", "Historical"], popular: true },
+  { id: "4", name: "Machu Picchu", country: "Peru", img: "https://images.unsplash.com/photo-1526392060635-9d6019884377?w=800&q=80", rating: 4.9, tags: ["Historical", "Mountains"], popular: false },
+  { id: "5", name: "Santorini", country: "Greece", img: "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=800&q=80", rating: 4.7, tags: ["Beaches", "Adventure"], popular: false },
+  { id: "6", name: "Petra", country: "Jordan", img: "https://images.unsplash.com/photo-1579606032822-7f72ebbaee4e?w=800&q=80", rating: 4.8, tags: ["Historical"], popular: false },
 ];
 
 export function ExplorePage() {

@@ -11,10 +11,10 @@ import { formatCurrency, cn } from "@/lib/utils";
 import { toast } from "sonner";
 
 const INITIAL_TRANSACTIONS = [
-  { id: 1, title: "Shinjuku Hotel Deposit", category: "Hotels", amount: -400, date: "Oct 1, 2026", status: "Paid" },
-  { id: 2, title: "ANA Flight Tickets", category: "Flights", amount: -1200, date: "Sep 28, 2026", status: "Paid" },
-  { id: 3, title: "Group Fund Contribution", category: "Income", amount: 500, date: "Sep 25, 2026", status: "Received" },
-  { id: 4, title: "TeamLab Planets Tickets", category: "Activities", amount: -70, date: "Sep 20, 2026", status: "Paid" },
+  { id: 1, title: "Accommodation Deposit", category: "Hotels", amount: -400, date: "May 1, 2026", status: "Paid" },
+  { id: 2, title: "Flight Tickets", category: "Flights", amount: -1200, date: "Apr 28, 2026", status: "Paid" },
+  { id: 3, title: "Group Fund Contribution", category: "Income", amount: 500, date: "Apr 25, 2026", status: "Received" },
+  { id: 4, title: "Local Tour Booking", category: "Activities", amount: -70, date: "Apr 20, 2026", status: "Paid" },
 ];
 
 const CATEGORIES = ["Flights", "Hotels", "Food", "Activities", "Shopping", "Transport", "Income"];

@@ -82,14 +82,10 @@ export function ItineraryBuilder({ tripId }: { tripId: string }) {
   if (isLoading) return <div className="min-h-screen bg-surface-950 flex items-center justify-center"><Zap className="animate-spin text-brand-400" /></div>;
 
   const tripTitle = trip?.title?.toLowerCase() || "";
-  let city = "Tokyo";
-  if (tripTitle.includes("paris")) city = "Paris";
-  else if (tripTitle.includes("bali")) city = "Bali";
-  else if (tripTitle.includes("rome")) city = "Rome";
-  else if (tripTitle.includes("new york")) city = "New York";
-  else if (tripTitle.includes("tokyo")) city = "Tokyo";
+  let city = trip?.title || "Tokyo";
   
-  const cityInfo = CITY_DATA[city] || CITY_DATA["Tokyo"];
+  const cityKey = Object.keys(CITY_DATA).find(k => tripTitle.includes(k.toLowerCase())) || "Tokyo";
+  const cityInfo = CITY_DATA[cityKey];
 
   const TABS = [
     { id: "travel", label: "Travel", icon: Plane },
