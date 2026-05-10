@@ -79,9 +79,9 @@ export function CollaborateDashboard() {
                     {member.role === "Owner" ? (
                       <Badge variant="primary">Owner</Badge>
                     ) : (
-                      <select className="bg-surface-900 border border-surface-700 text-surface-300 text-sm rounded-lg px-2 py-1 outline-none">
-                        <option selected={member.role === "Editor"}>Editor</option>
-                        <option selected={member.role === "Viewer"}>Viewer</option>
+                      <select defaultValue={member.role} className="bg-surface-900 border border-surface-700 text-surface-300 text-sm rounded-lg px-2 py-1 outline-none">
+                        <option value="Editor">Editor</option>
+                        <option value="Viewer">Viewer</option>
                       </select>
                     )}
                     {member.role !== "Owner" && (
